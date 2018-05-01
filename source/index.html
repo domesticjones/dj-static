@@ -7,16 +7,16 @@
 </head>
 
 <body>
-  <div id="container" class="active-hero">
+  <div id="container" class="active-hi-there">
     {% include "partials/header.nunjucks" %}
-    <section data-section-name="hi-there" class="panel content-hero">
+    <section data-section-name="hi-there" class="panel content-hero is-active">
       {% include "partials/panel-hero.nunjucks" %}
     </section>
     <section data-section-name="the-record" class="panel content-about">
       <p>About</p>
     </section>
     <section data-section-name="skills" class="panel content-skills">
-      <p>skills</p>
+      {% include "partials/panel-skills.nunjucks" %}
     </section>
     <section data-section-name="works" class="panel content-portfolio">
       <p>Portfolio</p>

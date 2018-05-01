@@ -2,14 +2,21 @@
   @include grid(center, center);
 }
 
-.active-hero {
-  #spinner {
-    left: calc(50vw - #{$spinnerSize/2});
-    top: calc(50vh - #{$spinnerSize/2});
-  }
+.active-hi-there #spinner {
+  left: calc(50vw - #{$spinnerSize/2});
+  top: calc(50vh - #{$spinnerSize/2});
+}
+
+body.is-loaded #logo-hero {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
 }
 
 #logo-hero {
+  opacity: 0;
+  transform: scale(0.1) translateY(-18%);
+  @include transition(all 1.666s cubic-bezier(0.075, 0.885, 0.32, 1.275));
+  transition-delay: 666ms;
   display: block;
   width: $spinnerSize * 0.9;
   height: auto;

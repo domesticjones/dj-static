@@ -1,18 +1,16 @@
 /************* Font Families *************/
 
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,300i,900,900i|Walter+Turncoat');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,900,900i|Walter+Turncoat');
 
-$font-body: 'Nunito', sans-serif;
+$font-body: 'Nunito Sans', sans-serif;
 $font-deco: 'Walter Turncoat', cursive;
 
-$font-size: 16px;
+$font-size: 13px;
 
 /************* Weights & Styles *************/
 
-$font-light:        300;
-$font-normal:       400;
-$font-medium:       600;
-$font-bold:         700;
+$font-normal:       300;
+$font-bold:         900;
 
 $font-italic:       italic;
 
@@ -47,26 +45,24 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  font-size: 2.5em;
-  margin-bottom: 0.5em;
+  font-size: 3.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  line-height: 1;
   font-weight: $font-bold;
-
-  span {
-    display: block;
-    font-weight: $font-normal;
-  }
+  transform: translate(-2rem, -4.75rem);
+  color: $black;
+  position: absolute;
 }
 
 h2, .h2 {
   font-size: 1.75em;
   margin-bottom: 0.5em;
-  font-weight: $font-medium;
 }
 
 h3, .h3 {
   font-size: 1.5em;
   margin-bottom: 2em;
-  font-weight: $font-light;
 }
 
 h4, .h4 {
@@ -114,7 +110,7 @@ ol {
 p {
   margin: 0;
   padding: 0 0 2em 0;
-  line-height: 1.5em;
+  line-height: 1.25em;
   word-break: break-word;
   word-wrap: break-word;
   hyphens: none;
