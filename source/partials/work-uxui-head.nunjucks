@@ -1,0 +1,31 @@
+{%
+  set headUXUI_ethos = '
+      <p>
+        These two terms are always paired together, however the approach to each should be drastically different.
+        User experience should be more than a stencil for a color-by-numbers user interface.
+        It needs to influence everything from the style guide to the call to action buttons and hero images.
+        The emotion and pace the user experiences has to be reflected in the colors, typography and layout.
+      </p>
+    '
+%}
+{%
+  set headUXUI_values = [
+    'First Value',
+    'Second Value',
+    'Third Value',
+    'Fourth Value',
+    'Fifth Value'
+  ]
+%}
+
+<header class="practice-head">
+  <div class="head-content">
+    {{ headUXUI_ethos|safe }}
+  </div>
+  <div class="head-icon uxui"></div>
+  <ul class="head-content head-list">
+    {% for value in headUXUI_values %}
+      <li>{{ value|safe }}</li>
+    {% endfor %}
+  </ul>
+</header>

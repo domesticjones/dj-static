@@ -1,0 +1,24 @@
+/************** Body & Wrapper **************/
+
+html, body {
+  max-width: 100%;
+}
+
+body {
+  background-color: $white;
+}
+
+.panel {
+  display: none;
+  position: fixed;
+  z-index: 90;
+  width: 100vw;
+  height: 100vh;
+}
+
+a, a:visited, a:link,
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+/************** Spinner **************/

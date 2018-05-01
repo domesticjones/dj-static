@@ -1,0 +1,18 @@
+<header id="header">
+  <nav class="nav-header">
+    <ul>
+      <li class="nav-section nav-top">
+        <a href="#record" class="nav-item">The Record</a>
+      </li>
+      <li class="nav-section nav-left">
+        <a href="#skills" class="nav-item">Skills</a>
+      </li>
+      <li class="nav-section nav-right">
+        <a href="#works" class="nav-item">Works</a>
+      </li>
+      <li class="nav-section nav-bottom">
+        <a href="#contact" class="nav-item">Get In Touch</a>
+      </li>
+    </ul>
+  </nav>
+</header>

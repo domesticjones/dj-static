@@ -1,0 +1,83 @@
+#header {
+  width: 1px;
+  height: 1px;
+  font-family: $font-deco;
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  @include linkColor($black);
+  @include linkColor($green, hover);
+}
+
+.nav-header ul {
+  @include listStripped();
+
+  li {
+    @include grid(center, center);
+  }
+}
+
+.nav-section {
+  position: fixed;
+  z-index: 100;
+
+  a {
+    display: block;
+    line-height: 3rem;
+    padding: 0 2rem;
+  }
+
+  a {
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+
+}
+
+.nav-top {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 3rem;
+}
+
+.nav-bottom {
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 3rem;
+}
+
+.nav-left {
+  top: 0;
+  left: 0;
+  width: 3rem;
+  height: 100vh;
+
+  a {
+    transform: rotate(-90deg);
+    transform-origin: center;
+
+    &:hover {
+      transform: rotate(-90deg) scale(1.5);
+    }
+  }
+}
+
+.nav-right {
+  top: 0;
+  right: 0;
+  width: 3rem;
+  height: 100vh;
+
+  a {
+    transform: rotate(90deg);
+    transform-origin: center;
+
+    &:hover {
+      transform: rotate(90deg) scale(1.5);
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{%
+  set projectsFrontEnd = [
+    {
+      id: 'kozm',
+      name: 'The Kozm',
+      details: [
+        {
+          header: 'Conscious Mens Fashion',
+          description: '
+          <p>
+            Description goes here
+          </p>
+          ',
+          features: [
+            'Custom Wordpress Admin Interface',
+            'Custom Woocommerce Integration',
+            'Cookie and LocalStorage based Marketing Tools'
+          ]
+        }
+      ],
+      media: [
+        {
+          img: 'name.jpg',
+          alt: 'Image Description Short',
+          description: 'Condensed sentence describing the image'
+        }
+      ]
+    },
+    {
+      id: 'hive-frontend',
+      name: 'Boise Hive',
+      details: [
+        {
+          header: 'Yes, it\'s here too',
+          description: '
+          <p>
+            Description goes here
+          </p>
+          ',
+          features: [
+            'Integration with Square POS',
+            'Custom stepped through, minute-based booking system',
+            'Custom round-up donation plugin',
+            'Tons of Forms'
+          ]
+        }
+      ],
+      media: [
+        {
+          img: 'name.jpg',
+          alt: 'Image Description Short',
+          description: 'Condensed sentence describing the image'
+        }
+      ]
+    },
+    {
+      id: 'egyptian',
+      name: 'Egyptian Theatre',
+      details: [
+        {
+          header: 'Modern History',
+          description: '
+          <p>
+            Description Here
+          </p>
+          ',
+          features: [
+            'Custom Wordpress admin panel',
+            'Custom events plugin with',
+            'Custom slideshow creation GUI',
+            'Integration with Google Calendar'
+          ]
+        }
+      ],
+      media: [
+        {
+          img: 'name.jpg',
+          alt: 'Image Description Short',
+          description: 'Condensed sentence describing the image'
+        }
+      ]
+    },
+    {
+      id: 'maxvalue',
+      name: 'Max-Value',
+      details: [
+        {
+          header: 'Sure-Fire Gambling',
+          description: '
+          <p>
+            Description Here
+          </p>
+          ',
+          features: [
+            'Features Here'
+          ]
+        }
+      ],
+      media: [
+        {
+          img: 'name.jpg',
+          alt: 'Image Description Short',
+          description: 'Condensed sentence describing the image'
+        }
+      ]
+    }
+  ]
+%}
+
+<article class="content-pratice-work">
+  <ul class="work-list">
+    {% for project in projectsFrontEnd %}
+      <li data-detail="work-{{ project.id }}" class="work-list-item"><span>{{ project.name }}</span></li>
+    {% endfor %}
+  </ul>
+  <div class="work-item-detail">
+    {% for project in projectsFrontEnd %}
+      <div id="work-{{ project.id }}" class="work-item-detail-inner">
+        {% for details in project.details %}
+          <h2>{{ details.header|safe }}</h2>
+          {{ details.description|safe }}
+          <ul class="work-item-features">
+            {% for feature in details.features %}
+              <li>{{ feature }}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="work-item-media">
+    {% for project in projectsFrontEnd %}
+      <div id="work-{{ project.id }}-media" class="work-item-media-inner">
+        <div class="work-slideshow">
+          {% for media in project.media %}
+            <div class="work-slide">
+              <div class="work-slide-inner">
+                <div class="work-slide-content" style="background-image: url({{ media.img }});">
+                  <img src="{{ media.img }}" alt="{{ media.alt }}" class="media-image" />
+                </div>
+                <div class="work-slide-details">{{ media.description|safe }}</div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</article>

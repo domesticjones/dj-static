@@ -1,0 +1,28 @@
+{%
+  set headFrontEnd_ethos = '
+      <p>
+        Ethos description goes here
+      </p>
+    '
+%}
+{%
+  set headFrontEnd_values = [
+    'First Value',
+    'Second Value',
+    'Third Value',
+    'Fourth Value',
+    'Fifth Value'
+  ]
+%}
+
+<header class="practice-head">
+  <div class="head-content">
+    {{ headFrontEnd_ethos|safe }}
+  </div>
+  <div class="head-icon frontend"></div>
+  <ul class="head-content head-list">
+    {% for value in headFrontEnd_values %}
+      <li>{{ value|safe }}</li>
+    {% endfor %}
+  </ul>
+</header>
