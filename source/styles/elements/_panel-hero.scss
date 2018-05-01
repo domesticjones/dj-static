@@ -1,0 +1,17 @@
+.content-hero {
+  @include grid(center, center);
+}
+
+.active-hero {
+  #spinner {
+    left: calc(50vw - #{$spinnerSize/2});
+    top: calc(50vh - #{$spinnerSize/2});
+  }
+}
+
+#logo-hero {
+  display: block;
+  width: $spinnerSize * 0.9;
+  height: auto;
+  margin: -#{$spinnerSize/18} -#{$spinnerSize/6.66} 0 0;
+}

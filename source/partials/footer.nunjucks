@@ -1,3 +1,6 @@
+<figure id="spinner">
+  <img src="images/dj-spiral.svg" alt="Spinner" />
+</figure>
 <footer id="footer">
   <p id="copyright">
     Copyright &copy; 2018 Domestic Jones LLC. All rights reserved.

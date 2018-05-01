@@ -22,3 +22,28 @@ a:hover, a:focus, a:active {
 }
 
 /************** Spinner **************/
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+$spinnerSize: 66.6vh;
+
+#spinner {
+  position: fixed;
+  z-index: 2;
+  display: block;
+  height: $spinnerSize;
+  width: $spinnerSize;
+
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    animation: rotate 166.6s linear infinite;
+  }
+}
