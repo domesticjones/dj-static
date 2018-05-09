@@ -9,21 +9,21 @@
 <body>
   <div id="container" class="active-hi-there">
     {% include "partials/header.nunjucks" %}
-    <section data-section-name="hi-there" class="panel content-hero is-active">
+    <article data-section-name="hi-there" class="panel content-hero is-active">
       {% include "partials/panel-hero.nunjucks" %}
-    </section>
-    <section data-section-name="the-record" class="panel content-about">
+    </article>
+    <article data-section-name="the-record" class="panel content-about">
       {% include "partials/panel-record.nunjucks" %}
-    </section>
-    <section data-section-name="skills" class="panel content-skills">
+    </article>
+    <article data-section-name="skills" class="panel content-skills">
       {% include "partials/panel-skills.nunjucks" %}
-    </section>
-    <section data-section-name="works" class="panel content-portfolio">
-      <p>Portfolio</p>
-    </section>
-    <section data-section-name="contact" class="panel content-contact">
+    </article>
+    <article data-section-name="works" class="panel content-portfolio">
+      {% include "partials/panel-works.nunjucks" %}
+    </article>
+    <article data-section-name="contact" class="panel content-contact">
       {% include "partials/panel-contact.nunjucks" %}
-    </section>
+    </article>
     {% include "partials/footer.nunjucks" %}
   </div>
 </body>

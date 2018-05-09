@@ -1,0 +1,99 @@
+{% set
+  worksPrimary = [
+    {
+      id: 'bump',
+      name: 'BUMP',
+      url: 'https://bumpmag.org/',
+      urlText: 'Find Boise Underground Music Pages',
+      photos: [
+        { url: 'images/work/bump-magazines.jpg', cap: 'Three of the first issues of BUMP under my creative direction' },
+        { url: 'images/work/bump-website.jpg', cap: 'Boise Underground Music Pages website' },
+        { url: 'images/work/bump-andrewwk.jpg', cap: 'Andrew WK article spread' },
+        { url: 'images/work/bump-distro.jpg', cap: 'Custom-printable distribution lists that use the website data to produce the lists' },
+        { url: 'images/work/bump-country.jpg', cap: 'Boise country music article spread' }
+      ],
+      description: '
+        I took over creative direction for Boise Underground Music Pages in December of 2017.
+        My first issue came out in January of 2018 and has been going strong ever since and working collaboratively with Boise organizations like Treefort Music Fest and Wizard’s Comic Con.
+      ',
+      descriptionMore: '
+        Creating an equally engaging and living website was an important part of the brand and identity of BUMP.
+        I integrated Google Sheets into an events calendar as well as a template for importing events directly into the magazine for print.
+      '
+    },
+    {
+      id: 'boisehive',
+      name: 'Boise Hive',
+      url: 'https://boisehive.org/',
+      urlText: 'Check out The Hive',
+      photos: [
+        { url: 'images/work/boisehive-facility.jpg', cap: 'Photo of the Boise Hive by Full Resolution Photography' },
+        { url: 'images/work/boisehive-styleguide.jpg', cap: 'Boise Hive style guide excerpts' },
+        { url: 'images/work/boisehive-mayday2017.jpg', cap: 'Poster for MayDay! 2017' },
+        { url: 'images/work/boisehive-homepage.jpg', cap: 'Screenshot of the homepage of the Boise Hive\'s website' },
+        { url: 'images/work/boisehive-booking.jpg', cap: 'Screenshot of the end user\'s reservation steps' },
+        { url: 'images/work/boisehive-dashboard.jpg', cap: 'Screenshot of the Volunteer POS Dashboard' },
+        { url: 'images/work/boisehive-admin.jpg', cap: 'Screenshot of the Volunteer POS Booking Calendar' }
+      ],
+      description: '
+        Updating the business and booking systems required a modification of policy and procedure documents along with some basic brand guides to be established.
+        Part of my duties on the board of the Boise Hive is event management and I handle the branding, coordination, and management of the annual MayDay! Event.
+      ',
+      descriptionMore: '
+        The Hive is an entirely-volunteer run organization, so keeping processes as simple as possible for everyone is vital.
+        I streamlined the booking software for the end-user as well as for the volunteer maintaining customers at The Hive.
+        Since the implementation of my system, The Boise Hive has become completely self-sufficient with reservations alone.
+      '
+    },
+    {
+      id: 'decisioninsite',
+      name: 'DecisionInsite',
+      url: 'http://decisioninsite.com/our-technology/nextgen/',
+      urlText: 'Watch more feature videos from DecisionInsite',
+      photos: [
+        { url: 'images/work/decisioninsite-new.jpg', cap: 'Revamped interface for DecisionInsite' },
+        { url: 'images/work/decisioninsite-old.jpg', cap: 'Old interface for DecisionInsite' }
+      ],
+      description: '
+        DecisionInsite provides comprehensive mapping and plotting software for educational planning entities.
+        This robest software had its issues with outdated modal layovers and difficult-to-navigate functions.
+        My job as UX designer at <a href="https://vynyl.com" target="_blank">Vynyl</a> was to identify all the features of the old DecisionInsite, then rethink and rebuild the structure of using a map and data plotting tool.
+      ',
+      descriptionMore: '
+        I developed and lead the concepts of adding the toolbar, large iconography, and an in-depth control center that provides a wide variety of stats for plotted map regions.
+      '
+    },
+    {
+      id: 'posters',
+      name: 'Posters',
+      url: '',
+      urlText: '',
+      photos: [
+        { url: 'images/work/poster-crispinglover.jpg', cap: 'Crispin Hellion Glover' },
+        { url: 'images/work/poster-ghostbusters.jpg', cap: 'Ghostbusters Party' },
+        { url: 'images/work/poster-gorilla.jpg', cap: 'The first Boise Hive benefit show' },
+        { url: 'images/work/poster-toyzoo.jpg', cap: 'Toy Zoo\'s first album release' },
+        { url: 'images/work/poster-mudhoney.jpg', cap: 'Mudhoney' },
+        { url: 'images/work/poster-davidliebehart.jpg', cap: 'David Liebe Hart' },
+        { url: 'images/work/poster-badacidtrip.jpg', cap: 'Bad Acid Trip' },
+        { url: 'images/work/poster-authorpunisher.jpg', cap: 'Author & Punisher' },
+        { url: 'images/work/poster-agentorange.jpg', cap: 'Agent Orange and In The Whale' },
+        { url: 'images/work/poster-mentors.jpg', cap: 'The Mentors' },
+        { url: 'images/work/poster-microbabies.jpg', cap: 'Alien takeover' },
+        { url: 'images/work/poster-scottkelly.jpg', cap: 'Scott Kelly of Neurosis' },
+        { url: 'images/work/poster-otherpeople.jpg', cap: 'Brett Netson & Friends' },
+        { url: 'images/work/poster-metalachi.jpg', cap: 'Metalachi' },
+        { url: 'images/work/poster-drp.jpg', cap: 'Dirty Reggae Punx' },
+        { url: 'images/work/poster-authorpunisher2.jpg', cap: 'Author & Punisher' },
+        { url: 'images/work/poster-dyingfamous.jpg', cap: 'Dying Famous' },
+        { url: 'images/work/poster-eyehategod.jpg', cap: 'Eye Hate God and Iron Reagan' }
+      ],
+      description: 'I like to make things and stuff.',
+      descriptionMore: ''
+    }
+  ]
+%}
+
+{% for work in worksPrimary %}
+  {% include "partials/layout-work.nunjucks" %}
+{% endfor %}

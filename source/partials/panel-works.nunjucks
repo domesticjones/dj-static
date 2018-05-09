@@ -1,0 +1,6 @@
+<section class="logo-works-wrap">
+  <img src="images/dj-logo.svg" alt="Logo for Domestic Jones LLC" id="logo-works" />
+</section>
+<section id="work-slideshow-master">
+  {% include "data/work-primary.nunjucks" %}
+</section>
