@@ -58,6 +58,6 @@
     "postcss-scss": "^0.4.0"
   },
   "dependencies": {
-    "slick-carousel": "^1.8.1"
+    "vivus": "^0.4.3"
   }
 }

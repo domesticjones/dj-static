@@ -119,3 +119,87 @@ body.is-loaded .nav-section {
     }
   }
 }
+
+.nav-icon {
+  display: none;
+
+  svg {
+    display: block;
+    height: 2rem;
+    fill: $yellow-pale;
+    margin: 0 auto 0.5rem auto;
+    @include transition();
+  }
+}
+
+$responsiveNavheight: 5rem;
+@media (max-width: 1200px) {
+  #header {
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $responsiveNavheight;
+    font-size: 1rem;
+    background-image: url('images/background.jpg');
+    background-position: center bottom;
+  }
+
+  .nav-header {
+    height: $responsiveNavheight;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.78) 0%,rgba(0,0,0,0.52) 100%);
+  }
+
+  .nav-section {
+    width: 25% !important;
+    height: $responsiveNavheight !important;
+    top: auto;
+    bottom: 0;
+
+    a.nav-item {
+      padding: 0.5rem;
+      line-height: 1;
+      color: $yellow-pale;
+      transform: none;
+      text-align: center;
+      padding: 0;
+
+      &::before,
+      &::after {
+        display: none !important;
+      }
+    }
+  }
+
+  .nav-top {
+    right: auto;
+    left: 0;
+  }
+
+  .nav-left {
+    right: auto;
+    left: 25%;
+  }
+
+  .nav-right {
+    right: 25%;
+    left: auto;
+  }
+
+  .nav-bottom {
+    right: 0;
+    left: auto;
+  }
+
+
+  @include linkColor($yellow, all, '.nav-item.is-active');
+
+  .nav-icon {
+    display: block;
+  }
+
+  .nav-item.is-active .nav-icon svg {
+    fill: $green;
+  }
+}

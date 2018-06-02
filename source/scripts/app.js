@@ -115,3 +115,12 @@ $(document).ready(() => {
 $(window).load(() => {
   $('body').addClass('is-loaded');
 });
+$(window).resize(() => {
+  $('#resize-hold').fadeIn(500, () => {
+    new Vivus('resize-hold-icon', {
+      type: 'oneByOne',
+      duration: 175,
+    });
+    $('#resize-hold').delay(5000).fadeOut(1500);
+  });
+});
