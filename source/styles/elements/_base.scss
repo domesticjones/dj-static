@@ -77,3 +77,29 @@ $spinnerSize: 66.6vh;
 body.is-loaded #spinner {
   opacity: 1;
 }
+
+$responsiveNavheight: 5rem;
+
+@media (max-width: 1200px) {
+  .panel {
+    display: block;
+    padding: 2rem 2rem #{$responsiveNavheight + 6rem} 2rem;
+    width: 100%;
+    min-height: 100%;
+    overflow: auto;
+  }
+
+  .pane {
+    position: static;
+  }
+}
+
+@media (max-width: 420px) {
+  .panel {
+    padding: 2rem 1rem #{$responsiveNavheight + 4rem} 1rem;
+  }
+
+  .pane {
+    padding: 1rem;
+  }
+}

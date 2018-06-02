@@ -132,7 +132,6 @@ body.is-loaded .nav-section {
   }
 }
 
-$responsiveNavheight: 5rem;
 @media (max-width: 1200px) {
   #header {
     position: fixed;
@@ -152,8 +151,8 @@ $responsiveNavheight: 5rem;
   }
 
   .nav-section {
-    width: 25% !important;
-    height: $responsiveNavheight !important;
+    width: 25%;
+    height: $responsiveNavheight;
     top: auto;
     bottom: 0;
 
@@ -201,5 +200,21 @@ $responsiveNavheight: 5rem;
 
   .nav-item.is-active .nav-icon svg {
     fill: $green;
+  }
+}
+
+@media (max-width: 420px) {
+  #header {
+    font-size: 0.75rem;
+  }
+
+  #header,
+  .nav-header,
+  .nav-section {
+    height: #{$responsiveNavheight - 1rem};
+  }
+
+  .nav-icon svg {
+    height: 1.5rem;
   }
 }

@@ -43,3 +43,40 @@
   opacity: 0;
   @include transition(all 666ms ease-in-out);
 }
+
+@media (max-width: 1200px) {
+  body.is-loaded .active-the-record #spinner {
+    opacity: 0;
+  }
+
+  .logo-record-wrap {
+    position: static;
+    height: 75vh;
+    width: auto;
+  }
+
+  #logo-record {
+    width: auto;
+    height: 75vh;
+  }
+
+  .record-answers {
+    width: 100%;
+    transform: translateY(0);
+  }
+
+  .content-about.is-active .record-answers {
+    transform: translateY(4rem);
+  }
+}
+
+@media (max-width: 420px) {
+
+  .logo-record-wrap {
+    height: 60vh;
+  }
+
+  #logo-record {
+    height: 60vh;
+  }
+}

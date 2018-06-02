@@ -1,3 +1,18 @@
+$(window).load(() => {
+  $('body').addClass('is-loaded');
+});
+
+$(window).resize(() => {
+  $('#resize-hold').fadeIn(250, () => {
+    $('#resize-hold svg').fadeIn(50);
+    new Vivus('resize-hold-icon', {
+      type: 'oneByOne',
+      duration: 250,
+    });
+    $('#resize-hold, #resize-hold svg').delay(5500).fadeOut(1500);
+  });
+});
+
 $(document).ready(() => {
   // Main Navigation
   $('.nav-item, .inline-link').on('click', (e) => {
@@ -110,17 +125,5 @@ $(document).ready(() => {
     const photo = $this.closest('.work-slideshow').find('.work-slideshow-inner').eq(targetIndex).find('.work-slideshow-photo').data('photo');
     $this.closest('.work-slideshow').find('.work-slideshow-inner').eq(targetIndex).find('.work-slideshow-photo').css('background-image', `url(${photo})`);
     $this.closest('.work-slideshow').find('.work-slideshow-inner').eq(targetIndex).addClass('is-active');
-  });
-});
-$(window).load(() => {
-  $('body').addClass('is-loaded');
-});
-$(window).resize(() => {
-  $('#resize-hold').fadeIn(500, () => {
-    new Vivus('resize-hold-icon', {
-      type: 'oneByOne',
-      duration: 175,
-    });
-    $('#resize-hold').delay(5000).fadeOut(1500);
   });
 });

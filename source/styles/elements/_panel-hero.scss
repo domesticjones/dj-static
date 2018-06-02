@@ -22,3 +22,21 @@ body.is-loaded #logo-hero {
   height: auto;
   margin: -#{$spinnerSize/18} -#{$spinnerSize/6.66} 0 0;
 }
+
+@media (max-width: 1200px) {
+  .active-hi-there #spinner {
+    top: calc(45vh - #{$spinnerSize/2});
+  }
+
+  #logo-hero {
+    position: relative;
+  }
+}
+
+@media (max-width: 420px) {
+  #logo-hero {
+    position: relative;
+    top: 7.5vh;
+    left: -2.5vw;
+  }
+}
