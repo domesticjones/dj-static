@@ -155,8 +155,13 @@
 }
 
 .work-slideshow-caption {
+  background-color: transparentize($black, 0.1);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   text-align: center;
   margin: 1rem 0;
+  padding: 1rem;
 }
 
 .work-slideshow-dots {
