@@ -159,7 +159,7 @@ li.skill-single {
 
 @media (max-width: 420px) {
   .content-skills {
-    padding-bottom: #{$responsiveNavheight};
+    padding-bottom: $responsiveNavheight;
   }
 
   li.skill-single,
