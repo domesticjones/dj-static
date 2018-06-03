@@ -31,6 +31,7 @@ $(document).ready(() => {
       $('.nav-item').removeClass('is-active');
       $(`.nav-item[href="#${target}"]`).addClass('is-active');
     }
+    $('html, body, .panel').animate({ scrollTop: 0 }, 'slow');
   });
 
   // Contact Security Question
