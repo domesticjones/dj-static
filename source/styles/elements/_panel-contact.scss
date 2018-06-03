@@ -131,3 +131,71 @@
     background-color: $yellow;
   }
 }
+
+
+@media (max-width: 1200px) {
+  body.is-loaded .active-contact #spinner {
+    opacity: 0;
+  }
+
+  .content-contact {
+    padding-bottom: #{$responsiveNavheight + 2rem};
+  }
+
+  .logo-contact-wrap {
+    position: static;
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .is-human .active-contact #logo-contact {
+    transform: none;
+  }
+
+  #logo-contact {
+    position: static;
+    width: 60vw;
+    height: auto;
+  }
+
+  .contact-info {
+    width: 100%;
+    margin-top: 6rem;
+
+    h1 {
+      left: 2rem;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .content-contact {
+    padding-bottom: #{$responsiveNavheight};
+  }
+
+  .contact-info {
+    margin-top: 2rem;
+
+    h1 {
+      left: 1rem;
+    }
+  }
+
+  #contact-personal {
+    @include grid(center, center, column);
+
+    &.contact-list li {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+
+  #contact-social {
+    @include grid(space-between, center, row, wrap);
+
+    li {
+      width: 45%;
+    }
+  }
+}

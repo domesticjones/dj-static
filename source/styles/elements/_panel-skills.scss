@@ -158,6 +158,10 @@ li.skill-single {
 }
 
 @media (max-width: 420px) {
+  .content-skills {
+    padding-bottom: #{$responsiveNavheight};
+  }
+
   li.skill-single,
   .skills-other li.skill-single {
     width: 100%;
