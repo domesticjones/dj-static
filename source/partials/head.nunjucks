@@ -1,8 +1,22 @@
 <meta charset="utf-8">
+<title>Domestic Jones | Print, UX, UI & Development</title>
+<meta name="description" content="User Experience, User Interface, Web/App Development, and Subversive Graphic Design by Dustin Jones.">
+<meta name="robots" content="index, nofollow">
+<meta name="author" content="Dustin Jones">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-<meta name="description" content="" />
-
-<!-- Favicons -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Domestic Jones, LLC">
+<meta property="og:url" content="http://domesticjones.com/">
+<meta property="og:image" content="/images/dj-opengraph.jpg">
+<meta property="business:contact_data:locality" content="Boise">
+<meta property="business:contact_data:region" content="ID">
+<meta property="business:contact_data:postal_code" content="83702">
+<meta property="business:contact_data:country_name" content="USA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@domesticjones">
+<meta name="twitter:title" content="Domestic Jones | Print, UX, UI & Development">
+<meta name="twitter:description" content="User Experience, User Interface, Web/App Development, and Subversive Graphic Design by Dustin Jones.">
+<meta name="twitter:image" content="/images/dj-opengraph.jpg">
 <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -12,11 +26,10 @@
 <meta name="msapplication-TileColor" content="#ffff66">
 <meta name="msapplication-config" content="favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<!-- END Favicons -->
 
-<!-- Stylesheets -->
+<!-- build:style(source/styles) main.css defer -->
 <link rel="stylesheet" href="main.css" type="text/css" media="all">
-<!-- END Stylesheets -->
+<!-- endbuild -->
 
 <!--[if lt IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>

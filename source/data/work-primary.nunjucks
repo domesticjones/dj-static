@@ -1,6 +1,25 @@
 {% set
   worksPrimary = [
     {
+      id: 'augusto',
+      name: 'Augusto Fine Rugs',
+      url: 'https://www.augustofinerugs.com/',
+      urlText: 'Visit Augusto Fine Rugs',
+      photos: [
+        { url: 'images/work/augusto-aboutpage.jpg', cap: 'About Augusto Fine Rugs' },
+        { url: 'images/work/augusto-gallery.jpg', cap: 'Custom gallery with detail zoom' },
+        { url: 'images/work/augusto-instagram.jpg', cap: 'Custom Instagram feed' }
+      ],
+      description: '
+        Augusto Fine Rugs is a rapidly growing business, and they needed a more sustainable way to manage their website.
+        With inventory quickly coming and going, Anna Augusto and her staff could no longer rely on waiting for their web hosting company to simply swap out some photos.
+      ',
+      descriptionMore: '
+        Because of the extremely high quality of product that Augusto Fine Rugs Carries, a custom gallery was built to quickly peruse her up-to-date stock and a zoom feature to see the fine detail that goes into her product.
+        Based on user research and analytics, the website was optimized for mobile and tablets including the custom gallery functions.
+      '
+    },
+    {
       id: 'bump',
       name: 'BUMP',
       url: 'https://bumpmag.org/',
